@@ -1,0 +1,59 @@
+.portfolio{
+    margin-top: 80px;
+    padding-bottom: 50px;
+    &__wrapper{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__header{
+        font-size: 30px;
+        text-align: center;
+    }
+    &__list{
+      
+        margin-bottom: 40px;
+        margin-right: 100px;
+    }
+    &__item{
+      margin-bottom: 10px;
+      &:last-child{
+          margin-bottom: 0;
+      }
+    &:first-child{
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-weight: 600;
+
+    }
+    
+    }
+    &__link{
+        font-size: 20px;
+        &:hover{
+            color:#0000ff;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .portfolio{
+        margin-top: 80px;
+        padding-bottom: 50px;
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__header{
+            font-size: 25px;
+            text-align: center;
+        }
+        &__list{ text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            margin-right: 0;
+            
+        }
+
+    }   
+}
