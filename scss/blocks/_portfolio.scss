@@ -1,6 +1,8 @@
 .portfolio{
-    margin-top: 80px;
+    padding-top: 80px;
     padding-bottom: 50px;
+    background-color: rgba(11, 23, 66, .2);
+
     &__wrapper{
         margin-top: 50px;
         display: flex;
@@ -38,7 +40,6 @@
 }
 @media screen and (max-width:500px){
     .portfolio{
-        margin-top: 80px;
         padding-bottom: 50px;
         &__wrapper{
             flex-direction: column;

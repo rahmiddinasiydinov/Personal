@@ -41,6 +41,8 @@ a {
 }
 
 .header {
+  background-color: rgba(11, 23, 66, 0.2);
+  color: #122857;
   padding: 20px 20px;
 }
 
@@ -100,40 +102,71 @@ a {
 }
 
 .technologies {
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(11, 23, 66, 0.2);
 }
 
 .technologies__header {
   font-weight: 700;
+  text-align: center;
+}
+
+.technologies__list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .technologies__item {
+  max-width: 300px;
   margin-top: 20px;
   color: #0b1742;
   font-size: 18px;
   font-weight: 500;
+  margin-right: 40px;
+}
+
+.technologies__item:last-child {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 500px) {
   .technologies {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
   }
   .technologies__header {
     font-weight: 700;
     font-size: 30px;
+  }
+  .technologies__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .technologies__item {
     margin-top: 20px;
     color: #0b1742;
     font-size: 20px;
     font-weight: 600;
+    margin-right: 0;
   }
 }
 
 .portfolio {
-  margin-top: 80px;
+  padding-top: 80px;
   padding-bottom: 50px;
+  background-color: rgba(11, 23, 66, 0.2);
 }
 
 .portfolio__wrapper {
@@ -182,7 +215,6 @@ a {
 
 @media screen and (max-width: 500px) {
   .portfolio {
-    margin-top: 80px;
     padding-bottom: 50px;
   }
   .portfolio__wrapper {

@@ -1,28 +1,49 @@
 .technologies{
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(11, 23, 66, .2);
+
     &__header{
         font-weight: 700;
+        text-align: center;
+    }
+    &__list{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     &__item{
+        max-width: 300px;
         margin-top: 20px;
         color: rgb(11, 23, 66);
         font-size: 18px;
         font-weight: 500;
+        margin-right: 40px;
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
 @media screen and (max-width:500px) {
     .technologies{
         text-align: center;
-        margin-top: 30px;
+        padding-top: 30px;
         &__header{
             font-weight: 700;
             font-size: 30px;
+        }
+        &__list{
+            flex-direction: column;
+            align-items: center;
+
         }
         &__item{
             margin-top: 20px;
             color: rgb(11, 23, 66);
             font-size: 20px;
             font-weight: 600;
+            margin-right: 0;
         }
     }   
     
